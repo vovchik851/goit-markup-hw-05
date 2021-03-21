@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Студия</title>
 </head>
 
@@ -25,7 +26,7 @@
                     <span class="logo-web">Web</span>Studio</a>
                 <ul class="navigation-list list">
                     <li class="navigatoin-item">
-                        <a class="current navigatin-link link" href="./index.html">Студия</a>
+                        <a class="suptitle current navigatin-link link" href="./index.html">Студия</a>
                     </li>
                     <li class="navigatoin-item">
                         <a class="navigatin-link link" href="./portfolio.html">Портфолио</a>
@@ -58,7 +59,7 @@
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <div class="block-button">
-                    <button class="hero-button" type="button">Заказать услугу</button>
+                    <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
                 </div>
             </div>
         </section>
@@ -119,14 +120,17 @@
                     <li class="work-item">
                         <img class="work-img" src="./images/works/img_1.jpg" alt="Разработка сайтов" width="370"
                         height="294">
+                        <p class="work-title">Десктопные приложения</p>
                     </li>
                     <li class="work-item">
                         <img class="work-img" src="./images/works/img_2.jpg" alt="Разработка мобильных приложений"
                         width="370" height="294">
+                        <p class="work-title">Мобильные приложения</p>
                     </li>
                     <li class="work-item">
                         <img class="work-img" src="./images/works/img_3.jpg" alt="Разработка дизайна" width="370"
                         height="294">
+                        <p class="work-title">Дизайнерские решения'</p>
                     </li>
                 </ul>
             </div>
@@ -394,6 +398,14 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-button" data-modal-close> <svg class="modal-close-button-icon">
+                <use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
+            </button>
+            </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
